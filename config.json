@@ -1,39 +1,80 @@
 {
   "layers": [
     {
-      "name": "Background",
-      "values": ["Blue", "Orange", "Purple", "Red", "Yellow"],
-      "trait_path": "./trait-layers/backgrounds",
-      "filename": ["blue", "orange", "purple", "red", "yellow"],
-      "weights": [20,20,20,20,20]
+      "name": "Weapon",
+      "values": ["Max", "Yellow", "Blue"],
+      "trait_path": "./layers/1-Weapon",
+      "filename": ["0", "1", "2"],
+      "weights": [33, 33, 33]
     },
     {
-      "name": "Foreground",
-      "values": ["Python Logo", "Python Logo 2", "Python Logo 3", "Python Logo 4", "Python Logo 5"],
-      "trait_path": "./trait-layers/foreground",
-      "filename": ["logo", "logo", "logo", "logo", "logo"],
-      "weights": [20,20,20,20,20]
+      "name": "Body",
+      "values": [
+        "ape",
+        "aquaman",
+        "deepspace",
+        "gorilla",
+        "human",
+        "metaspace",
+        "yeti"
+      ],
+      "trait_path": "./layers/2-Body",
+      "filename": [
+        "ape",
+        "aquaman",
+        "deepspace",
+        "gorilla",
+        "human",
+        "metaspace",
+        "yeti"
+      ],
+      "weights": [14, 14, 14, 14, 14, 14, 14]
     },
     {
-      "name": "Branding",
-      "values": ["A Name", "Another Name"],
-      "trait_path": "./trait-layers/text",
-      "filename": ["text", "text"],
+      "name": "Tattoo",
+      "values": ["blacknife", "greenknife", "redsnake", "vividsnake", "none"],
+      "trait_path": "./layers/3-Tatoo",
+      "filename": ["blacknife", "greenknife", "redsnake", "vividsnake", "none"],
+      "weights": [5, 5, 5, 5, 80]
+    },
+    {
+      "name": "Clothes",
+      "values": ["cybersuit", "holiday"],
+      "trait_path": "./layers/4-Clothes",
+      "filename": ["cybersuit", "holiday"],
       "weights": [50, 50]
-    }
-  ],
-  "incompatibilities": [
+    },
     {
-      "layer": "Background",
-      "value": "Blue",
-      "incompatible_with": ["Python Logo 2"],
-      "default": {
-        "value": "Default Incompatibility",
-        "filename": "./trait-layers/foreground/logo"
-      }
+      "name": "Accessories",
+      "values": ["bluecable", "Whitecable", "None"],
+      "trait_path": "./layers/5-Accesories",
+      "filename": ["bluecable", "Whitecable", "none"],
+      "weights": [10, 10, 80]
+    },
+    {
+      "name": "Helmet",
+      "values": [
+        "Architect",
+        "blackbird",
+        "Blue",
+        "Gold",
+        "Whitearchitect",
+        "whitebird"
+      ],
+      "trait_path": "./layers/6-Helmets",
+      "filename": [
+        "Architect",
+        "blackbird",
+        "Blue",
+        "Gold",
+        "Whitearchitect",
+        "whitebird"
+      ],
+      "weights": [16, 16, 16, 16, 16, 16]
     }
   ],
+  "incompatibilities": [],
   "baseURI": ".",
-  "name": "NFT #",
-  "description": "This is a description for this NFT series."
+  "name": "Legendegens #",
+  "description": "Legendegens Description"
 }
